@@ -4,6 +4,12 @@
     margin: 100px auto;
     background-color: #f7f7f7;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    /* taken from box shadow website */
+}
+
+.fa-plus
+{
+    float:right;
 }
 
 .completed
@@ -14,7 +20,7 @@
 
 h1
 {
-    background-color: #2980b9;
+    background-color: #333333;
     color: white;
     margin: 0;
     padding: 10px 20px;
@@ -31,4 +37,62 @@ ul{
 body
 {
     font-family: Roboto;
+}
+
+li
+{
+    background-color: #fff;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+
+}
+
+li:nth-child(2n)
+{
+    background-color: #f7f7f7;
+    /* styles every second background */
+}
+
+input
+{
+    font-size: 18px;
+    color:#333333;
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    /* taken from border box website mozilla to correct the oversize of textbox*/
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+input:focus
+{
+    background-color: #fff;
+    border: 3px solid #333333;
+    outline: none;
+}
+body
+{
+    background: #333333;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* taken from https://uigradients.com/#PureLust */
+}
+
+span
+{
+    background-color: #e74c3c;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    width: 0;
+    display: inline-block;
+    transition: 0.2s linear;
+    opacity: 0;
+}
+li:hover span
+{
+    width: 40px;
+    opacity: 1.0;
 }
